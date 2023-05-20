@@ -8,6 +8,7 @@ def get_algo_string(algorithm):
             return "A Star"
         case "DIJ":
             return "Dijkstra"
+        
 def pathfind(algorithm, grid_class, start_pos, end_pos):
     match algorithm:
         case "DFS":
@@ -76,7 +77,7 @@ def breadth_first_search(grid_class, start_pos, end_pos):
     return False
 
 def heuristic(position, end_pos):
-    # Calculate the Manhattan distance heuristic between two positions
+    # Manhattan distance heuristic between two positions
     return abs(position[0] - end_pos[0]) + abs(position[1] - end_pos[1])
 
 def a_star_search(grid_class, start_pos, end_pos):
@@ -87,12 +88,12 @@ def a_star_search(grid_class, start_pos, end_pos):
         grid[start_pos[0]][start_pos[1]].set_path()
         return True
 
-    open_set = [start_pos]  # Store the positions to be evaluated
-    parents = {start_pos: None}  # Store the parent of each visited position
-    g_scores = {start_pos: 0}  # Store the g-score for each visited position
+    open_set = [start_pos]
+    parents = {start_pos: None}
+    g_scores = {start_pos: 0}
 
     while open_set:
-        # Find the position with the lowest f-score in the open set
+        # Position with the lowest f-score in the open set
         current_pos = min(open_set, key=lambda pos: g_scores[pos] + heuristic(pos, end_pos))
 
         if current_pos == end_pos:
@@ -104,7 +105,7 @@ def a_star_search(grid_class, start_pos, end_pos):
             return True
 
         open_set.remove(current_pos)
-        grid[current_pos[0]][current_pos[1]].set_found()  # Set the current cell as found
+        grid[current_pos[0]][current_pos[1]].set_found()
 
         walls = grid[current_pos[0]][current_pos[1]].get_wall()
         neighbors = grid_class.get_neighbors()[current_pos]
@@ -132,16 +133,16 @@ def dijkstra_search(grid_class, start_pos, end_pos):
         grid[start_pos[0]][start_pos[1]].set_path()
         return True
 
-    queue = [(0, start_pos)]  # Use a list as a priority queue to store positions with their corresponding costs
-    parents = {start_pos: None}  # Store the parent of each visited position
-    costs = {start_pos: 0}  # Store the cost for each visited position
+    queue = [(0, start_pos)] 
+    parents = {start_pos: None} 
+    costs = {start_pos: 0} 
 
     while queue:
         queue.sort(key=lambda x: x[0])
         _, current_pos = queue.pop(0)
 
         if current_pos == end_pos:
-            # Mark the path from start to goal
+            # Path from start to goal
             path_pos = end_pos
             while path_pos is not None:
                 grid[path_pos[0]][path_pos[1]].set_path()
