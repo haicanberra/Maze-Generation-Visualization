@@ -43,7 +43,6 @@ def breadth_first_search(grid_class, start_pos, end_pos):
     grid[start_pos[0]][start_pos[1]].set_found()
 
     if start_pos == end_pos:
-        grid[start_pos[0]][start_pos[1]].set_path()
         return True
 
     queue = [start_pos]
@@ -85,7 +84,6 @@ def a_star_search(grid_class, start_pos, end_pos):
     grid[start_pos[0]][start_pos[1]].set_found()
 
     if start_pos == end_pos:
-        grid[start_pos[0]][start_pos[1]].set_path()
         return True
 
     open_set = [start_pos]
