@@ -71,30 +71,25 @@ if __name__ == "__main__":
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
                 if start_btn.collidepoint(event.pos) and not one_start:
-                    print("start clicked!")
                     choose_start = True
                     one_start = True
                 elif end_btn.collidepoint(event.pos) and not one_end:
-                    print("end clicked!")
                     choose_end = True
                     one_end = True
                 elif gen_btn.collidepoint(event.pos):
-                    print("gen clicked!")
                     grid = Grid()
                     grid.create()
                     grid = Maze(grid).generate()
                     one_start = False
                     one_end = False
                 elif clear_btn.collidepoint(event.pos):
-                    print("clear clicked!")
                     grid.clear()
                     one_start = False
                     one_end = False  
                 elif find_btn.collidepoint(event.pos):
-                    print("find clicked")
                     if one_start and one_end:
                         if not pathfind(algorithm, grid, start_pos, end_pos):
-                            print("no path found!")
+                            print("No path found!")
                             running = False
                 elif dij_btn.collidepoint(event.pos):
                     algorithm = ALGORITHMS[0]
