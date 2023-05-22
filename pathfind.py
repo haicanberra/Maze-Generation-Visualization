@@ -128,7 +128,6 @@ def dijkstra_search(grid_class, start_pos, end_pos):
     grid[start_pos[0]][start_pos[1]].set_found()
 
     if start_pos == end_pos:
-        grid[start_pos[0]][start_pos[1]].set_path()
         return True
 
     queue = [(0, start_pos)] 
