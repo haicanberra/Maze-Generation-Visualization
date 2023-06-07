@@ -37,7 +37,7 @@ source env/Scripts/activate
 pip install -r requirements.txt
 ```  
 ## Usage
-- Launch '''main.py'''  
+- Launch ```main.py```  
 - Click Start/End to set start/end cells.
 - Regen for regenerating the maze.
 - Clear to clear the paths but retain the maze.
