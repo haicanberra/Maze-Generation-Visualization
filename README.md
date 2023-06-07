@@ -1,7 +1,7 @@
 # Pathfinding Algorithms Visualizer
 
 ## About
-A visualization tool written in Python using Pygame module for pathfinding algorithms in randomly generated mazes.
+A visualization tool written in Python for pathfinding algorithms in randomly generated mazes.  
 
 ## Packages
 Pygame.
