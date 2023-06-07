@@ -11,7 +11,7 @@
 - Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
 - Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
   
-## Mathematics
+## Specifications
 - Iterative randomized depth-first search is used for maze generation.  
   
 - The neighbor priority used: Left - Top - Right - Bottom.  
@@ -29,17 +29,19 @@
 &emsp;4. A* Algorithm  
 &emsp;&emsp;Dijkstra's Algorithm but with heuristic using Manhattan distance.  
 &emsp;&emsp;The score of each cell is the sum of the cost and heuristic.  
-## Notes
-- Click Start/End to set start/end cells.
-- Regen for regenerating the maze.
-- Clear to clear the paths but retain the maze.
+
 ## Installation
 ```
 python -m venv env
 source env/Scripts/activate
 pip install -r requirements.txt
 ```  
-## Futher Optimizations:
+## Usage
+- Launch '''main.py'''  
+- Click Start/End to set start/end cells.
+- Regen for regenerating the maze.
+- Clear to clear the paths but retain the maze.
+## Notes
 - Selections of maze generating algorithms.
 - Maybe more pathfinding algorithms.
 
