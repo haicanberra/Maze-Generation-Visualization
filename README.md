@@ -36,7 +36,7 @@ python -m venv env
 source env/Scripts/activate
 pip install -r requirements.txt
 ```  
-## Usage
+## Usages
 - Launch ```main.py```.  
 - ```Start```/```End```: Set start/end cells.
 - ```Regen```: Regenerate the maze.
