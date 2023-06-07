@@ -38,9 +38,10 @@ pip install -r requirements.txt
 ```  
 ## Usage
 - Launch ```main.py```  
-- ```Start```/```End``` to set start/end cells.
-- ```Regen``` for regenerating the maze.
-- ```Clear``` to clear the paths but retain the maze.
+- ```Start```/```End```: Set start/end cells.
+- ```Regen```: Regenerate the maze.
+- ```Clear```: Clear the paths but retain the maze.  
+- ```DFS```, ```BFS```, ```DIJ```, ```A*```: Select algorithm to use.
 ## Notes
 - Selections of maze generating algorithms.
 - Maybe more pathfinding algorithms.
