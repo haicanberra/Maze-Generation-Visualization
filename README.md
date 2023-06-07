@@ -7,9 +7,9 @@ A visualization tool written in Python using Pygame module for pathfinding algor
 Pygame.
 
 ## References
-Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm)  
-Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding)  
-Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal)  
+Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).  
+Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
+Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
   
 ## Mathematics
 Iterative randomized depth-first search is used for maze generation.  
