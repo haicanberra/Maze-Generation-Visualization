@@ -17,14 +17,14 @@
 - The neighbor priority used: Left - Top - Right - Bottom.  
   
 - Algorithms included:  
-1. Depth-first Search  
-    Explores as far as possible along each branch path before backtracking. Uses stack to store cells discovered for backtracking.
-2. Breadth-first Search  
-    Explores all cells at the present depth prior to moving on to the cells at the next depth level. Uses queue to store cells found but not explored.
-3. Dijkstra's Algorithm  
-    Iteratively explore cheapest cost cells with the cost being the steps to reach that cell. Uses a queue with cost included.
-4. A* Algorithm  
-    Dijkstra's Algorithm but with heuristic using Manhattan distance. The score of each cell is the sum of the cost and heuristic.
+&emsp;1. Depth-first Search  
+&emsp;&emsp;Explores as far as possible along each branch path before backtracking. Uses stack to store cells discovered for backtracking.
+&emsp;2. Breadth-first Search  
+&emsp;&emsp;Explores all cells at the present depth prior to moving on to the cells at the next depth level. Uses queue to store cells found but not explored.
+&emsp;3. Dijkstra's Algorithm  
+&emsp;&emsp;Iteratively explore cheapest cost cells with the cost being the steps to reach that cell. Uses a queue with cost included.
+&emsp;4. A* Algorithm  
+&emsp;&emsp;Dijkstra's Algorithm but with heuristic using Manhattan distance. The score of each cell is the sum of the cost and heuristic.
 ## Notes
 - Click Start/End to set start/end cells.
 - Regen for regenerating the maze.
