@@ -1,22 +1,22 @@
 # Pathfinding Algorithms Visualizer
 
 ## About
-A visualization tool written in Python for Pathfinding Algorithms in randomly generated mazes.  
+- A visualization tool written in Python for Pathfinding Algorithms in randomly generated mazes.  
 
 ## Packages
-Pygame.
+- Pygame.
 
 ## References
-Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).  
-Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
-Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
+- Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).  
+- Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
+- Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
   
 ## Mathematics
-Iterative randomized depth-first search is used for maze generation.  
+- Iterative randomized depth-first search is used for maze generation.  
   
-The neighbor priority used: Left - Top - Right - Bottom.  
+- The neighbor priority used: Left - Top - Right - Bottom.  
   
-Algorithms included:  
+- Algorithms included:  
 1. Depth-first Search  
     Explores as far as possible along each branch path before backtracking. Uses stack to store cells discovered for backtracking.
 2. Breadth-first Search  
