@@ -56,7 +56,7 @@
 <a name="installation"></a>
 ## Installation
 ```
-python3 -m venv env
+python3 -m venv venv
 source env/Scripts/activate
 pip install -r requirements.txt
 ```  
