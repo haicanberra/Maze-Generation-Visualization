@@ -1,4 +1,4 @@
-import pygame, random
+import pygame, random, sys
 from config import *
 from cell import *
 from grid import *
@@ -140,5 +140,4 @@ if __name__ == "__main__":
         pygame.display.update()
     
     pygame.quit()
-    quit()
 

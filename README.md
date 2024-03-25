@@ -6,33 +6,22 @@
 
 # Pathfinding Algorithms Visualizer
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 </div> 
+---
 
 ## Contents
 * [About](#about)
-* [Packages](#packages)
-* [References](#references)
 * [Specifications](#specifications)
-* [Installation](#installation)
 * [Usages](#usages)
 * [Notes](#notes)
-
+* [References](#references)
+---
 <a name="about"></a>
 ## About
 - A visualization tool written in Python for Pathfinding Algorithms in randomly generated mazes.  
 
-<a name="packages"></a>
-## Packages
-- Pygame.
-
-<a name="references"></a>
-## References
-- Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).  
-- Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
-- Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
-  
+---
 <a name="specifications"></a>
 ## Specifications
 - Iterative randomized depth-first search is used for maze generation.  
@@ -51,26 +40,26 @@
 &emsp;&emsp;Uses a queue with cost included.  
 &emsp;4. <ins>A* Algorithm</ins>  
 &emsp;&emsp;Dijkstra's Algorithm but with heuristic using Manhattan distance.  
-&emsp;&emsp;The score of each cell is the sum of the cost and heuristic.  
+&emsp;&emsp;The score of each cell is the sum of the cost and heuristic.
 
-<a name="installation"></a>
-## Installation
-```
-python3 -m venv venv
-source env/Scripts/activate
-pip install -r requirements.txt
-```  
-
+---
 <a name="usages"></a>
 ## Usages
-- Launch ```main.py```.  
 - ```Start```/```End```: Set start/end cells.
 - ```Regen```: Regenerate the maze.
 - ```Clear```: Clear the paths but retain the maze.  
 - ```DFS```, ```BFS```, ```DIJ```, ```A*```: Select algorithm to use.
 
+---
 <a name="notes"></a>
 ## Notes
 - <ins>Add</ins>: Maybe more pathfinding algorithms, selections of maze generating algorithms.
+
+---
+<a name="references"></a>
+## References
+- Maze Generation Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Maze_generation_algorithm).  
+- Pathfinding Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Pathfinding).  
+- Graph Traversal Algorithms by [Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal).  
 
 
